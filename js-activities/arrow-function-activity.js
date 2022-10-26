@@ -1,2 +1,2 @@
-let greet = (name) => "Hey" + name +"!";
-greet(Marta);
+let greet = (name) => "Hey " + name +"!";
+console.log(greet("Marta"));
