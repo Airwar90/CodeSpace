@@ -1,10 +1,8 @@
 function reverseString(string) {
-    let strLength = string.length;
     let revString= " ";
-for (let i = strLength - 1; i>=0; i--) {
+    for (let i = string.length - 1; i>=0; i--) {
     revString +=string[i];
-} 
-return revString;
-
+    } 
+    return revString;
 }
 console.log(reverseString("ciao"));
