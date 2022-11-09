@@ -35,22 +35,22 @@
 
     <div class = "choices">
         
-        <button id="rock">Rock</button>
-        <button id="paper">Paper</button>
-        <button id="scissors">Scissors</button>
+        <button id="rock" data-cy= "rock-btn" >Rock</button>
+        <button id="paper" data-cy= "paper-btn">Paper</button>
+        <button id="scissors" data-cy= "scissors-btn">Scissors</button>
     </div>
 
     <div class="results">
-        <h2>Yuor choice is: <span id="user-choice"></span></h2>
-        <h2>The computer chose: <span id="computer-choice"></span></h2>
-        <h2>The result is: <span id= "result"></span></h2>
+        <h2>Yuor choice is: <span id="user-choice" data-cy= "user-choice"></span></h2>
+        <h2>The computer chose: <span id="computer-choice" data-cy= "computer-choice"></span></h2>
+        <h2>The result is: <span id= "result" data-cy= "result"></span></h2>
     </div>
 
     <script>
 
         const optionsList = document.querySelectorAll("button");
-
-        let userChoice;
+		
+		let userChoice;
         let computerChoice;
         let result;
 
@@ -74,7 +74,7 @@
         }
         function getResult() {
             if(computerChoice.innerHTML === userChoice) {
-                result = "It's a tie!";
+                result = "It's a Tie!";
             }
             else {
                 
